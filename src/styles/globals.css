@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@source "../app/**/*.{js,ts,jsx,tsx}";
+@source "../components/**/*.{js,ts,jsx,tsx}";
+@source "../pages/**/*.{js,ts,jsx,tsx}";
+
 :root {
   --background: #ffffff;
   --secendary: #171717;
@@ -7,14 +11,6 @@
   --heading: #000000;
   --textColor: #202122;
   --font-inter: "Inter", sans-serif;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-primary: var(--primary);
-  --color-secendary: var(--secendary);
-  --color-heading: var(--heading);
-  --color-text: var(--textColor);
 }
 
 * {
@@ -25,4 +21,12 @@ body {
   background: var(--background);
   color: var(--textColor);
   font-family: var(--font-inter);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-primary: var(--primary);
+  --color-secendary: var(--secendary);
+  --color-heading: var(--heading);
+  --color-text: var(--textColor);
 }
