@@ -3,11 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "export": "next export",
-    "lint": "next lint"
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "npx serve out"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
